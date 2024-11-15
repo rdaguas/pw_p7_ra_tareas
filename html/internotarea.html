@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilotarea.css">
+    <script>
+        function cambiarColorTexto() {
+            document.getElementById('parrafo').style.color = 'blue';
+        }
+
+        function cambiarTamanioNombre() {
+            document.getElementById('nombre').style.fontSize = '25px';
+        }
+
+        function cambiarColorFondo() {
+            document.getElementById('fondo').style.backgroundColor = 'rgba(17, 68, 119, 0.3)';
+        }
+
+        function cambiarTamanioTexto() {
+            document.getElementById('parrafo').style.fontSize = '20px';
+        }
+
+        function agregarNuevoMenu() {
+            document.getElementById('idMenu').innerHTML += '<li>Soporte</li>';
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Mi P&#225;gina Web</h1>
+        <h2 id="nombre">Roberto Aguas</h2>
+    </header>
+    <nav>
+        <ul id="idMenu">
+            <li>Menu</li>
+            <li>Servicios</li>
+            <li>Contactos</li>
+            <li>Ayuda</li>
+        </ul>
+    </nav>
+    <section>
+        <h3>Ingrese sus Credenciales</h3>
+        <label class="titulos" for="idinput">Nombre: </label>
+        <input id="idinput" type="text">
+        <label class="titulos" for="idinputapellido">Apellido: </label>
+        <input id="idinputapellido" type="text">
+        <button>Guardar</button>
+        <br>
+        <br>
+        <article id="fondo">
+            <h3>Art&#237;culo de Ciencias</h3>
+            <time datetime="01-01-2024">Publicado el:
+                01-01-2024 </time>
+
+            <p id="parrafo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quaerat ipsa facere consequatur.
+                Cumque, adipisci odit. Provident quo fuga totam, quaerat ducimus nesciunt doloribus delectus porro
+                repellat debitis? Explicabo aliquid asperiores iusto facilis. Reprehenderit fugit blanditiis similique
+                aspernatur ratione inventore sapiente cum quis, ipsum odit architecto magnam perspiciatis laboriosam
+                pariatur commodi error? Sed impedit dolor distinctio similique nihil quod numquam ex voluptas?
+                Necessitatibus nostrum est vitae libero id tenetur aliquid mollitia aperiam culpa. Recusandae odit eius
+                voluptate? Laudantium beatae totam in quia sed illo officia, ea, asperiores a veniam accusamus sequi
+                eaque voluptas debitis quis. Corporis ab dicta non cum quis magnam ex praesentium unde est accusantium.
+                Quis, eius hic laudantium consequuntur rerum praesentium! Minima cumque velit ipsam facilis molestiae
+                quam, impedit vero animi fuga illo reprehenderit ullam tempora molestias quae reiciendis pariatur
+                laborum quia sit quibusdam hic veniam consectetur voluptatum. Non tempore mollitia ipsum odio eligendi
+                ut aspernatur sed obcaecati quisquam eius saepe delectus quos consequuntur beatae quod voluptatum illo
+                eum dolores, architecto perferendis commodi. Vel qui, mollitia at animi dolor consequatur ex. Quo
+                laboriosam repellendus dolor atque, error eum fugiat suscipit ad quidem. Perspiciatis eos quae dolorem!
+                Perferendis sed deleniti quibusdam provident voluptates, expedita incidunt accusamus rem deserunt sit
+                atque, nisi adipisci molestias totam vitae ratione eveniet autem a eos eaque, suscipit ut! Non, alias
+                eaque nihil saepe, tempore doloremque quod quidem quia porro unde exercitationem quam? Quasi ratione
+                quisquam error doloremque officia natus, nisi ullam exercitationem itaque! Minus cum maiores magni
+                quisquam, voluptate, repellendus quam maxime quas nam repellat eaque mollitia consequatur velit pariatur
+                itaque, iusto tenetur ab tempora soluta laborum ipsam totam sint sequi. Labore pariatur incidunt nostrum
+                rerum mollitia dolores, aperiam excepturi tempore dignissimos deserunt neque dolor molestias accusamus,
+                voluptate error quaerat, similique provident quos laudantium. Iste, suscipit placeat. Reiciendis ratione
+                facilis neque optio, labore sequi et dolore odit dolorem corporis rem voluptates nostrum maxime
+                delectus, doloremque laborum veniam! Velit consequuntur modi fugiat dolores aliquid soluta consectetur
+                autem non. Illo libero totam officia sequi voluptatem facere, laboriosam officiis delectus sapiente.
+                Harum, voluptatem sit, odio cupiditate soluta possimus corrupti minima illum similique exercitationem
+                sed tempore nobis vero animi consequuntur sequi delectus error placeat cumque! Nemo dolore vero iure
+                tempore corporis repellat sit commodi. Enim maiores earum alias beatae! Blanditiis, vero explicabo!
+                Natus sequi nisi, doloremque sint dicta magni consequuntur, consectetur accusantium corporis ipsum cum!
+                Rerum cum dolorum illo totam ratione molestiae maxime incidunt aperiam nostrum possimus?
+            </p>
+            <button>M&#225;s informaci&#243;n</button>
+        </article>
+        <br>
+        <br>
+        <br>
+        <button onclick="cambiarColorTexto()">Cambiar color texto</button>
+        <button onclick="cambiarTamanioTexto()">Cambiar tama&#241;o nombre</button>
+        <button onclick="cambiarColorFondo()">Cambiar color fondo</button>
+        <button onclick="cambiarTamanioTexto()">Cambiar tama&#241;o texto</button>
+        <button onclick="agregarNuevoMenu()">Agregar Nuevo Menu</button>
+        <br>
+    </section>
+    <aside>
+        <blockquote cite="https://miblog/ciencias">Referencia del Art&#237;culo de Ciencias </blockquote>
+    </aside>
+    <footer>
+        <h6 id="id_pie_pagina_uce">Todos los derechos Reservados &#174;</h6>
+    </footer>
+
+</body>
+
+</html>
