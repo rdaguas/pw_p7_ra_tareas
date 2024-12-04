@@ -1,12 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  selector: 'app-root', // Este es el selector que se usa en el index.html
+  template: `<h1>Hola Mundo</h1>
+  <h2> Con Angular</h2>`, // Aquí va el contenido directamente
+  styles: []
 })
-export class AppComponent {
-  title = 'tareaAngular';
-}
+export class AppComponent {}
