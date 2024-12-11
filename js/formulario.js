@@ -1,5 +1,6 @@
-const listas = []
 
+
+const listas = []
 const app = Vue.createApp({
     methods: {
         agregarLista() {
@@ -10,10 +11,9 @@ const app = Vue.createApp({
                 fechaNacimiento: this.fechaNacimiento,
                
             }
-            this.listaformulario.push(nuevaLista)
+            this.listaformulario.unshift(nuevaLista)
         }
     },
-
     data() {
         return {
             listaformulario: listas,
@@ -24,5 +24,4 @@ const app = Vue.createApp({
         }
     }
 })
-
 app.mount('#myAppF')
