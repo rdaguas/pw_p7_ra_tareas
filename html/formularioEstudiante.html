@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estudianteEstilo.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="myAppF">
+        <div class="container">
+            <div class="Formulario">
+                <header>Estudiante</header>
+
+                <section class="formulario-contenedor">
+                    <!-- Formulario-->
+                    <h2>Formulario</h2>
+                    <p type="Nombre:"><input v-model="nombre" type="text"></p>
+                    <p type="Apellido:"><input v-model="apellido" type="text"></p>
+                    <p type="Hobby:"><input v-model="Hobby" type="text"></p>
+                    <p type="Fecha Nacimiento:"><input v-model="fechaNacimiento" type="date"></p>
+                    
+                    <div class="button-container">
+                        <button v-on:click="agregarLista">Guardar</button>
+                    </div>
+                    <ul>
+                        <li v-for="item in listaformulario">
+                            {{ item.nombre }} - {{ item.apellido }} - {{ item.Hobby }} - {{ item.fechaNacimiento }}  
+                        </li>
+                    </ul>
+                </section>
+                <footer></footer>
+            </div>
+        </div>
+    </div>
+    <script src="../js/formulario.js"></script>
+</body>
+
+</html>
